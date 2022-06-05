@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">INHA AR Navigation</string>
+    <string name="mapbox_access_token">sk.eyJ1IjoicGFyazUwNTBrciIsImEiOiJjbDMxbW9jOWoyMHBiM2ttcDF1dmR0Z2QyIn0.Fia-MDsYm8NdDILnWN0iEQ</string>
+    <string name="TOAST_MESSAGE">"이것은 Toast 메시지입니다."</string>
+    <string name="TOAST_MESSAGE2">"이것은 Toast 메시지입니다2222."</string>
+    <string name="vision_not_supported_message">"vision지원불가"</string>
+    <string name="vision_not_supported_title">"vision지원불가"</string>
+</resources>
