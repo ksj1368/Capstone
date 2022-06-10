@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.myapplication111"
-        minSdk 23
+        minSdk 24
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -28,18 +28,31 @@ android {
 }
 
 dependencies {
-    //implementation 'com.mapbox.mapboxsdk:mapbox-android-core:3.1.0'
-    //implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.7.1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.github.tlaabs:TimetableView:1.0.3-fx1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
     implementation("com.google.android.gms:play-services-location:19.0.1") // old version : 18.0.0
     implementation'androidx.recyclerview:recyclerview:1.2.1'
     implementation'androidx.cardview:cardview:1.0.0'
+
+    // Mapbox
     implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.3.0'
     implementation 'com.mapbox.mapboxsdk:mapbox-android-core:2.0.1'
     implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation-ui:0.42.6'
+
+
+    implementation(name: 'google_ar_required', ext:'aar')
+    implementation(name: 'mapbox-android-telemetry-2-1-0', ext:'aar')
+    implementation(name: 'unitygar', ext:'aar')
+    // unity + ar
+    implementation(name: 'arcore_client', ext:'aar')
+
+    implementation(name: 'unityandroidpermissions', ext:'aar')
+
 }

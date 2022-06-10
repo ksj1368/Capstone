@@ -161,16 +161,10 @@ public class NavigationFragment extends Fragment implements OnMapReadyCallback, 
                 btn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent5 =  getActivity().getApplicationContext().getPackageManager().getLaunchIntentForPackage("com.INHA.Capstone_AR");
-                        intent5.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(intent5);
-                        //Intent intent1 = new Intent(getApplicationContext(), aractivity.class);
-                        //startActivity(intent1);
-                        //Intent intent = new Intent(getApplicationContext(), UnityPlayerActivity.class);
-                        //startActivity(intent);
+                        Intent intent = new Intent(getApplicationContext(), UnityPlayerActivity.class);
+                        startActivity(intent);
                     }
                 });
-
             }
         });
 
